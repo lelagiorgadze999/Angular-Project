@@ -1,0 +1,17 @@
+<div class="container" *ngIf="cartServ.carts.length">
+  <ng-container *ngFor="let cart of cartServ.carts">
+    <div class="child">
+      <h1>{{ getItemCount(cart) }}</h1>
+      <img src="{{ cart.img }}" alt="decoration image" />
+
+      <div class="describe">
+        <h2>{{ cart.name | shorter }}</h2>
+        <h5>{{ cart.price | price }}</h5>
+      </div>
+      <i (click)="cartServ.removeCard(cart)" class="fa-solid fa-xmark"></i>
+    </div>
+  </ng-container>
+</div>
+<div class="container" *ngIf="!cartServ.carts.length">
+  <p>Your cart is empty</p>
+</div>

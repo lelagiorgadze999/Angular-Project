@@ -1,0 +1,7 @@
+<div class="container">
+  <h1>{{ userServ.loggedUser?.name }}</h1>
+  <h1>{{ userServ.loggedUser?.surname }}</h1>
+  <h5>contact:</h5>
+  <a href="mailto:contact@website.com">{{ userServ.loggedUser?.email }}</a>
+  <button (click)="logOut()">Log out</button>
+</div>

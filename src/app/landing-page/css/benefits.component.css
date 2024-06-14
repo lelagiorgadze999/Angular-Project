@@ -1,0 +1,17 @@
+.cards {
+  margin-top: 35px;
+  margin-bottom: 26px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.cards .card {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  background-color: rgba(191, 191, 191, 0.2);
+  padding: 25px 30px 25px 25px;
+  border-radius: 5px;
+  width: 300px;
+}/*# sourceMappingURL=benefits.component.css.map */

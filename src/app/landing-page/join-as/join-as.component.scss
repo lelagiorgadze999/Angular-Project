@@ -1,0 +1,55 @@
+.container {
+  width: 100%;
+  padding: 48px 100px;
+
+  background-image: url(https://s3-alpha-sig.figma.com/img/c3b1/e0e2/090a9daabc858d0b893b5c3d1292ad83?Expires=1716768000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=qRSM1zHww-IhQjWZ72bIXffWdSQq2hirwNty3Qu38b~KZ0sI~CN82jZA1EmAPkP5zvAyCaqKdvyek2TVzdSr~d1sPVA-BBCJbohxjq4eLDm4KFXdcbgs-VYXuxIm2tkvSllxoacwBnMR71wnreQkIKcY8CHXl2-YGIFn5psQZldWuAcqW2jIv9xRDP8VsXSsGaQxmufWJX-1BVy4zqQbGC-cOmbnXJI8tRYss3Mkj9wWgaKm4Tpi0vvXbTkLQnITu~cI30HjzOdNpP5n3rPwC-qnq8CYv1~D6-F4SCXTBU8eA8t820ljBSWfVCqJDQdP8-3mJ5ebnV~LpnCoA2nWKg__);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  h2 {
+    font-weight: 700;
+    font-size: 28px;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  p {
+    font-weight: 600;
+    font-size: 18px;
+    color: #ffbc5d;
+    margin-bottom: 20px;
+  }
+  .form {
+    position: relative;
+    width: 500px;
+    input {
+      width: 100%;
+      padding: 18px;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+    }
+    button {
+      position: absolute;
+      height: 100%;
+      width: 130px;
+      top: 100%;
+      transform: translate(-100%, -100%);
+      background-color: #ff6b6b;
+      border: none;
+      padding: 14px 20px;
+      border-radius: 3px;
+      font-size: 13px;
+      line-height: 17px;
+      font-weight: 500;
+      color: #ffffff;
+      cursor: pointer;
+    }
+    @media (max-width: 800px) {
+      width: 100%;
+    }
+  }
+}
+.error {
+  border: 2px solid red;
+}

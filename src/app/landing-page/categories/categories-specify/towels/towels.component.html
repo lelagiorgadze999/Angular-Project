@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="child" *ngFor="let towel of myTowel">
+    <img src="{{ towel.img }}" alt="cookware image" />
+    <div class="describe">
+      <h2>{{ towel.name | shorter }}</h2>
+      <h5>{{ towel.price | price }}</h5>
+      <i
+        (click)="
+          cartServ.addToCart({
+            id: towel.id,
+            name: towel.name,
+            price: towel.price,
+            img: towel.img
+          })
+        "
+        class="fa-solid fa-plus"
+      ></i>
+      <i (click)="cartServ.removeCard(towel)" class="fa-solid fa-minus"></i>
+    </div>
+  </div>
+</div>

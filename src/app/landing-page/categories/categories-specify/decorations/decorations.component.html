@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="child" *ngFor="let decoration of myDecoration">
+    <img src="{{ decoration.img }}" alt="decoration image" />
+    <div class="describe">
+      <h2>{{ decoration.name | shorter }}</h2>
+      <h5>{{ decoration.price | price }}</h5>
+      <i
+        (click)="
+          cartServ.addToCart({
+            id: decoration.id,
+            name: decoration.name,
+            price: decoration.price,
+            img: decoration.img
+          })
+        "
+        class="fa-solid fa-plus"
+      ></i>
+      <i
+        (click)="cartServ.removeCard(decoration)"
+        class="fa-solid fa-minus"
+      ></i>
+    </div>
+  </div>
+</div>

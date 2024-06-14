@@ -1,0 +1,48 @@
+.container {
+  max-width: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  h1 {
+    font-size: 32px;
+    color: #333;
+    margin: 0;
+  }
+  h5 {
+    font-size: 20px;
+    color: #999;
+    margin: 0;
+    font-weight: normal;
+  }
+
+  a {
+    font-size: 20px;
+    color: #333;
+    text-decoration: none;
+    margin-top: 10px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #417394;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 15px;
+
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+}

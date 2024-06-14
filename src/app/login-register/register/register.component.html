@@ -1,0 +1,60 @@
+<div class="container">
+  <h2>Register</h2>
+  <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+    <label for="name">Name</label>
+    <input
+      [ngClass]="{ error: (registerForm.get('name')?.errors?.['minlength'] || registerForm.get('name')?.errors?.['required']) && registerForm.get('name')?.touched }"
+      formControlName="name"
+      type="text"
+    />
+    <app-err-msg
+      *ngIf="registerForm.get('name')?.errors?.['minlength'] && registerForm.get('name')?.touched"
+      message="min length error"
+    ></app-err-msg>
+    <label for="surname">Surname</label>
+    <input
+      [ngClass]="{ error: (registerForm.get('surname')?.errors?.['minlength'] || registerForm.get('surname')?.errors?.['required']) && registerForm.get('surname')?.touched }"
+      formControlName="surname"
+      type="text"
+    />
+    <app-err-msg
+      *ngIf="registerForm.get('surname')?.errors?.['minlength'] && registerForm.get('surname')?.touched"
+      message="min length error"
+    ></app-err-msg>
+    <label for="email">Email</label>
+    <input
+      [ngClass]="{ error: (registerForm.get('email')?.errors?.['email'] || registerForm.get('email')?.errors?.['required']) && registerForm.get('email')?.touched }"
+      formControlName="email"
+      type="email"
+    />
+    <app-err-msg
+      *ngIf="registerForm.get('email')?.errors?.['email'] && registerForm.get('email')?.touched"
+      message="email error"
+    ></app-err-msg>
+    <form formGroupName="passwordGroup">
+      <label for="password">Password</label>
+      <input
+        [ngClass]="{ error: (registerForm.get('passwordGroup')?.get('password')?.errors?.['pattern'] || registerForm.get('passwordGroup')?.get('password')?.errors?.['required']) && registerForm.get('passwordGroup')?.get('password')?.touched }"
+        formControlName="password"
+        type="password"
+      />
+      <app-err-msg
+        *ngIf="registerForm.get('passwordGroup')?.get('password')?.errors?.['pattern'] && registerForm.get('passwordGroup')?.get('password')?.touched"
+        message="Password error"
+      ></app-err-msg>
+      <label for="confirmPassword">Confirm Password</label>
+      <input
+        [ngClass]="{ error: (registerForm.get('passwordGroup')?.errors?.['passwordMatch'] || registerForm.get('passwordGroup')?.get('confirmPassword')?.errors?.['required']) && registerForm.get('passwordGroup')?.get('confirmPassword')?.touched }"
+        formControlName="confirmPassword"
+        type="password"
+      />
+      <app-err-msg
+        *ngIf="registerForm.get('passwordGroup')?.errors?.['passwordMatch'] && registerForm.get('passwordGroup')?.get('confirmPassword')?.touched"
+        message="Confirm Password error"
+      ></app-err-msg>
+    </form>
+    <button [disabled]="registerForm.invalid">Register</button>
+  </form>
+
+  <button routerLink="/login">Log in</button>
+</div>

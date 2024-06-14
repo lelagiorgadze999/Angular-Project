@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.container p {
+  font-size: 40px;
+  font-weight: 500;
+}/*# sourceMappingURL=page-not-found.component.css.map */

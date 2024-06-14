@@ -1,0 +1,41 @@
+.container nav {
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #417394;
+  margin-bottom: 15px;
+}
+.container nav ul {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-right: 100px;
+}
+@media (max-width: 900px) {
+  .container nav ul {
+    display: none;
+  }
+}
+.container nav ul li {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.container nav ul li a {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+}
+.container nav ul li .active {
+  border-bottom: 4px solid #ffa53b;
+  font-weight: 600;
+  font-size: 18px;
+}
+.container nav .icons {
+  display: flex;
+  gap: 30px;
+  margin-right: 50px;
+}
+.container nav .icons i {
+  cursor: pointer;
+}/*# sourceMappingURL=header.component.css.map */

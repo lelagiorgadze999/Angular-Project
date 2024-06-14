@@ -1,0 +1,80 @@
+.container {
+  margin-bottom: 50px;
+  .img-box {
+    border-radius: 10px;
+    padding: 102px;
+    padding-left: 220px;
+    margin: 50px 0;
+    background-image: url(https://s3-alpha-sig.figma.com/img/2fde/f600/c3b3f1cc5e7a3a06eee29ce5a936004c?Expires=1716768000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=R~c2stzT9qA4A4-gbziO1NG8RNuv5H2k2txqMS7biqdDRkYeVkcGxOQgMNQUmRm0oBsc~2XLLTysU1ivFUb2YcEpumbt4Kr-BtBZfCp8roMgKmY4FYpWniLjkfsG-xgKH3pESHJ~iDXYy5vMUxgU9Ez5IsOdKickwjjQoCmA0QQnjs4sp3W08DVgb5fmN9PGj4V821IJ6FULuOYM-m1tGyTiICtb16Z2f3h3c8sIjHdydSEMFposf38tbJRqlBveF5SHNxmildNH0oaEmA4Hz638IkGAEnDOytfmlqwSPG4VnuF3teXNsZfVLv~JLdeL2mdrZE4Kexcpebt~68g9Pg__);
+    background-repeat: no-repeat;
+    h3 {
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 30px;
+      color: #ffb321;
+      margin-bottom: 16px;
+    }
+    h2 {
+      font-weight: 600;
+      font-size: 45px;
+      line-height: 45px;
+      color: #4a5568;
+      margin-bottom: 10px;
+    }
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #4a5568;
+    }
+  }
+  .best-seller {
+    h2 {
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 28px;
+      color: rgba(34, 34, 34, 1);
+      margin-bottom: 15px;
+    }
+    p {
+      color: #4a5568;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+    }
+    .best-card-container {
+      margin-top: 25px;
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      gap: 20px;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
+      @media (max-width: 1220px) {
+        justify-content: space-around;
+      }
+      .best-box {
+        width: 350px;
+        border: 1px solid rgba(74, 85, 104, 0.3);
+        border-radius: 5px;
+        padding: 15px;
+        .card {
+          display: flex;
+          gap: 20px;
+          div {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            border-bottom: 1px solid rgba(74, 85, 104, 0.3);
+            padding: 10px;
+            width: 100%;
+          }
+          .last-card {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+  }
+}

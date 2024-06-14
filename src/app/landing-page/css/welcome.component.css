@@ -1,0 +1,93 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  gap: 20px;
+}
+.container .left-side {
+  padding-left: 60px;
+  padding-top: 30px;
+  background-image: url(https://s3-alpha-sig.figma.com/img/dd44/bba7/797e14e24bedb0ca3c646ce8bbe247df?Expires=1716163200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Hm19L67h2aFw8uTkHB7XPUWC7vbtNVTP3WcWd3oiV8v~MHm2eBT27r4tyi7dDizTQ7Al9UXh0VUz9OxrSgo3vNin-mDHAxeAn8Z-bbJtNHoj~sdXW-x7fF0R~l~2YwnenzUYj5YPq2FDy~KDyFU-FNPukfzkfpbtiBc1bSJDVCdIWRy0q2tUjZCpJbJG1fgjWeeT5LnGjxoGPox-gfbiHu7WnDs8B8VQXlxCQMlOA6SniMd1f4Y~ocPtTrrnokaKZC3913e0JXep9i6QpC2nIZeXC2~egRM~HGkzP08wUeLroeXreFl9w5es4Yb0mA~XX2kQHpT3dRUdAau9C2vSpQ__);
+  width: 800px;
+  height: 597px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+.container .left-side h1 {
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 68px;
+  color: #4a5568;
+}
+.container .left-side .coloured {
+  color: #417394;
+  border-bottom: 2px solid #ffa53b;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.container .right-side {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-image: url(https://s3-alpha-sig.figma.com/img/c41e/ec41/57033f0aaced642dcfa8cbf53601c7b1?Expires=1716163200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=SGJcsogb4ipkdHStnjr01KjQC-LL5PcmL-~5ntMMWv1~ym6hDrhk7cOoNT27ZH6JAEaFsrFBmnJRZyx43yNzndBMiFMu3r4xOT81etsOqked5qux-xe-NGoS~p8qfZIYfBzeEysJsmjDKAEpzFfRJYdSjHJf9n5zf25eyFGTmgb8sPic6djwcVqj~lJB2jwo3SPuweAeWeiFvk3uKJIP6PppNB7Nj4cH3jpZvGPI1HQiUC39RgmvsDrX8AfEm-i9zbbDW5u-5GnRaakTgao05HDX5VF8EoC3AbfMMclDIs4oY7nvOg4KLhZJ3zYJ9LgsODt5UvIUyc2kNPsj~DN9rw__);
+  background-size: cover;
+  background-position: center;
+  width: 380px;
+  height: 597px;
+  border-radius: 10px;
+}
+.container .right-side .exclusive {
+  font-family: Kaushan Script, sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 51px;
+  color: #417394;
+}
+.container .right-side .orange {
+  background-color: #ffa53b;
+  padding: 2px 13px;
+  width: -moz-max-content;
+  width: max-content;
+}
+.container .right-side .orange h2 {
+  color: white;
+  background-size: contain;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+}
+@media (max-width: 900px) {
+  .container .right-side {
+    display: none;
+  }
+}
+.container button {
+  margin-top: 24px;
+  color: #4a5568;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  width: 180px;
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: transparent; /* Change this to your desired background color */
+  color: #4a5568; /* Change this to your desired text color */
+  border: 1px solid #4a5568;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+}
+.container button::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 8px solid #4a5568;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}/*# sourceMappingURL=welcome.component.css.map */

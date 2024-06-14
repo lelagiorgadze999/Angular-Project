@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 40px;
+
+  .child {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    border: 2px solid #1d2328;
+    padding: 40px 25px;
+    max-width: 400px;
+    width: 100%;
+  }
+  .describe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+}

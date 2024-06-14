@@ -1,0 +1,32 @@
+<div class="container">
+  <nav>
+    <a routerLink="/"
+      ><img src="../../../assets/images/logo.svg" alt="logo svg"
+    /></a>
+
+    <ul>
+      <li>
+        <a routerLink="./home" routerLinkActive="active">Home</a>
+      </li>
+      <li>
+        <a routerLink="categories" routerLinkActive="active">Categories</a>
+      </li>
+      <li>
+        <a routerLink="best-seller" routerLinkActive="active">Best Seller</a>
+      </li>
+    </ul>
+    <div class="icons">
+      <div class="cart-box">
+        <i routerLink="cart" class="fa-solid fa-cart-shopping cart"></i>
+        <div class="cart-info">
+          <span>{{ cartServ.carts.length }}</span>
+        </div>
+      </div>
+
+      <a (click)="redirectToLogin()">
+        <i class="fa-regular fa-user user"></i
+      ></a>
+      <span>Hello {{ userServ.loggedUser?.name }}</span>
+    </div>
+  </nav>
+</div>
