@@ -6,7 +6,7 @@
   .left-side {
     padding-left: 60px;
     padding-top: 30px;
-    background-image: url(https://s3-alpha-sig.figma.com/img/dd44/bba7/797e14e24bedb0ca3c646ce8bbe247df?Expires=1717372800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=op729yGqC4J3yQLUki0e2XnRnGN09Q0tMNxnYf2~7Ef64O5UlKkZOnG1zDQUIIqG0NnvVlB7KyimIZ3psPHOkqzzkZEN3Aw-4glxsf9wHyJdmt0cSARWJh69euhKeslUN0IZqSUaL5YcGMzHpTELW7oKNF~fhYqxpVOfmXRg1auhIa5PLXMT0beR0aMWPWZittnO3o02eUjVVNYbCbiidO~H9qaqtJMpE54RZT5fyZr1qIWPwwMH0TQPOiZxEuHgJftxpavrj5gfh2Uo6dKwsqNL6cJut7fNkZbpqws34xSgzjo43p7GS5ogdvKOuoMDiSXAWk0bFosI55DSncSr0A__);
+    background-image: url("https://s3-alpha-sig.figma.com/img/dd44/bba7/797e14e24bedb0ca3c646ce8bbe247df?Expires=1719187200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=AXzt0f3Co34A-M6aAmMkuT634YEv9OEj5rYihjMD3tW8QYwHqPxBufJVqfcMPeAiXgKQwlyl3-liYmwq97NZay7SdYKiWGuxXovHpf766xj4Iv9jeQY1MUYuLtZJ6iIor3vzWk-CnaRWxHPb3lKfK6QvBv39NIm9vzdFOCbkAanCa04HeJ6AtQLAxdZyFezq2o9WfYcvj7o2rAtK3rsN~JXOg5Jiax5fuowzz3PV7ftrdBqAtvYuPzobvNuAWJzEry5uAWVT~MWtwurYkitmOz4CmgXocZtfGfXBq9RMNscqp-R10axwnqw7JAOGggiGFaXWOi2WvxRxrZDzmSa02g__");
     width: 800px;
     height: 597px;
     background-size: cover;
@@ -29,7 +29,7 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    background-image: url(https://s3-alpha-sig.figma.com/img/c41e/ec41/57033f0aaced642dcfa8cbf53601c7b1?Expires=1717372800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=nEYNIIbmz2GAPzIEtLbnOEHcz3EKQtoPOfwvipcMnsGccfcmN19yA1eyaxx1j7XNY5mCkGLBD~WZeWcGYQHedQU8OAvWiNb~gFzkRhq6pVsMod~iVwDX3wohB2UC9gedvDwLogwxydSjODJNipPogw9YjfgdM9hd1H5MSWhFb4Ijtcdl2nHEROT3lfkjHjQ-uxIQvn4rDN11k-11PZUl6KPqLjg~aCzMcyUhExREnZDKLDz6mDbvi3KHBekoLMXfk6qp09CN~QBNxpIzypmXQ2QRrlfowT9mNY94xDIN5RkU3Lh7VjA3JfzsbkLSqFW6QBj3e5vcIdEajq5mpV4vZA__);
+    background-image: url("https://s3-alpha-sig.figma.com/img/c41e/ec41/57033f0aaced642dcfa8cbf53601c7b1?Expires=1719187200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=qoZbG7rTPPM~FbmYm0SXd5DXXS9Xa6DgBTQ0x4E1R5JS8v3DDcek5YosaGjBsLnliWVggBu3hr6JzHy1hupm1ytI9PGU-ME7LMgUGI3l4XIbxK649iJ6BLSZv8pegLFPk3TCE3khGdb0LIJpOXSf0rlR3thYIcN06TIo6EtlVMREripnCGvlii9d5q02XD6lQMXktQ2KWqyIb-FjzgScbjybIASsfvpk6QMeasV2kmP0ZWtKT-9flaVgftlmiKByn~Gsd5FmkD5umeHERiy9NqyNEEMOcYMtSbwsyfbclh9Cn9KNU-iAPm2CP13Q32pzYafkNt-5mOuSzek5FQexSA__");
     background-size: cover;
     background-position: center;
     width: 380px;
@@ -67,8 +67,8 @@
     width: 180px;
     display: inline-block;
     padding: 15px 30px;
-    background-color: transparent; /* Change this to your desired background color */
-    color: #4a5568; /* Change this to your desired text color */
+    background-color: transparent;
+    color: #4a5568;
     border: 1px solid #4a5568;
     border-radius: 4px;
     cursor: pointer;

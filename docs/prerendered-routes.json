@@ -1,0 +1,18 @@
+{
+  "routes": [
+    "/",
+    "/best-seller",
+    "/cart",
+    "/categories",
+    "/categories/bed-linen",
+    "/categories/cookware",
+    "/categories/cushion",
+    "/categories/decoration",
+    "/categories/gift",
+    "/categories/towel",
+    "/home",
+    "/login",
+    "/register",
+    "/user-info"
+  ]
+}
